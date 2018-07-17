@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/note_date_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:ellipsize="end"
+        android:textColor="#000"
+        android:textSize="16dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/note_item_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:scrollbars="none"
+        android:divider="@null" />
+
+    <TextView
+        android:id="@+id/note_last_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="10dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="?android:textColorSecondary"
+        android:textSize="11dp"/>
+
+</LinearLayout>

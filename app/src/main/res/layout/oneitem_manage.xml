@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <Button
+        android:id="@+id/oneitem_button"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_weight="2"
+        android:layout_gravity="left"
+        android:scaleType="fitXY"
+        android:textSize="12dp"
+        />
+
+    <TextView
+        android:id="@+id/oneitem_textview"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5.85"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical|left"
+        android:textColor="#000"
+        android:textSize="15sp"/>
+
+    <ImageButton
+        android:id="@+id/oneitem_imagebutton"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.05"
+        android:layout_gravity="right"
+        android:scaleType="fitXY"
+        android:layout_alignBottom="@+id/oneitem_textview"
+        android:layout_alignTop="@+id/oneitem_textview"
+        android:src="@drawable/delete_light"
+        />
+
+</LinearLayout>
